@@ -11,7 +11,14 @@ public class TheRiddler {
 			JOptionPane.showMessageDialog(null, ("incorrect"));
 			score += 0;
 		}
-Sting riddles = JOptionPane.showInputDialog(null, ("Take off my skin - I won't cry, but you will! What am I?"));
-	if(riddles.equals("onion"));
+String riddles = JOptionPane.showInputDialog(null, ("Take off my skin - I won't cry, but you will! What am I?"));
+	if(riddles.equals("onion")) {
+			score += 1;
+			JOptionPane.showMessageDialog(null, ("correct"));}
+	else {
+		  	JOptionPane.showMessageDialog(null, ("incorrect"));
+			score += 0;
+		}
+	JOptionPane.showMessageDialog(null, ("your socre is " +score ));
 	}
 }
